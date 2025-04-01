@@ -9,6 +9,5 @@ This project uses **Stable Diffusion** to generate images based on text prompts.
    ```bash
    git clone https://github.com/DasaSainath/Text-to-Image-Generator.git
    cd Text-to-Image-Generator
-
-   git add .
-   git commit -m "Initial project structure"
+git remote add origin https://github.com/<your_username>/Text-to-Image-Generator.git
+git push -u origin master
