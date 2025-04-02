@@ -9,4 +9,7 @@ This project uses **Stable Diffusion** to generate images based on text prompts.
    ```bash
    git clone https://github.com/DasaSainath/Text-to-Image-Generator.git
    cd Text-to-Image-Generator
+<<<<<<< HEAD
  
+=======
+>>>>>>> f86f85d (README.md)
