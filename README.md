@@ -1,12 +1,17 @@
-# Text-to-Image Generator
+# 🚀 Text-to-Image Generator  
 
-## Project Overview
-This project uses **Stable Diffusion** to generate images based on text prompts. The app takes a description of an image and returns a generated image.
+This project uses **Stable Diffusion** to generate images based on text prompts.  
+The app takes a description of an image and returns a generated image.  
 
-## Setup Instructions
+## 📌 Features  
+- Enter a text prompt and generate an AI-created image  
+- Uses **Stable Diffusion v1.5**  
+- Runs on **Streamlit**  
+- Supports **CUDA (GPU) acceleration**  
 
- Clone the repository:
-   bash
-   git clone https://github.com/DasaSainath/Text-to-Image-Generator.git
-   cd Text-to-Image-Generator
+## 🛠 Setup Instructions  
 
+### 1️⃣ **Clone the Repository**  
+```bash
+git clone https://github.com/DasaSainath/Text-to-Image-Generator.git
+cd Text-to-Image-Generator
