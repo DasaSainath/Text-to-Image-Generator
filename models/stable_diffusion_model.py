@@ -1,12 +1,22 @@
+import streamlit as st
 from diffusers import StableDiffusionPipeline
 import torch
-from config import config
 
 # Load the model
-model = StableDiffusionPipeline.from_pretrained(config.MODEL_NAME, use_auth_token=config.HUGGING_FACE_API_KEY)
-model.to("cuda")  # or "cpu" for CPU support
+@st.cache_resource  # Cache the model so it doesn't reload every time
+def load_model():
+    model = StableDiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5")
+    model.to("cuda" if torch.cuda.is_available() else "cpu")
+    return model
 
-def generate_image_from_text(prompt):
-    image = model(prompt).images[0]
-    return image
+pipe = load_model()
 
+# Streamlit UI
+st.title("🖼️ Text-to-Image Generator 🚀")
+prompt = st.text_input("Enter a text prompt below to generate an image:")
+
+if st.button("Generate Image"):
+    with st.spinner(f"Generating an image for: {prompt}..."):
+        image = pipe(prompt).images[0]  # Generate image
+        image.save("generated_image.png")  # Save image
+        st.image("generated_image.png")  # Display in Streamlit
