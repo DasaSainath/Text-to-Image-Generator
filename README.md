@@ -8,6 +8,7 @@ The app takes a description of an image and returns a generated image.
 - Uses **Stable Diffusion v1.5**  
 - Runs on **Streamlit**  
 - Supports **CUDA (GPU) acceleration**  
+feature-branch
 
 ## 🛠 Setup Instructions  
 
@@ -15,3 +16,13 @@ The app takes a description of an image and returns a generated image.
 ```bash
 git clone https://github.com/DasaSainath/Text-to-Image-Generator.git
 cd Text-to-Image-Generator
+
+## 🛠 Setup Instructions  
+
+### 1️⃣ **Clone the Repository**  
+```bash
+git clone https://github.com/DasaSainath/Text-to-Image-Generator.git
+cd Text-to-Image-Generator
+
+ 
+main
